@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07c0b83d94.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="center">
+        <div id="container">
+            <div id="sidebar">
+                <button data-page-target="#user-page" class="sideButton" id="user"><i class="material-icons-outlined">
+                        account_circle
+                    </i></button>
+
+                <button data-page-target="#shelf-page" class="sideButton" id="library">
+                    <i class="material-icons-outlined">
+                        cottage
+                    </i></button>
+
+                <button data-page-target="#add-page" class="sideButton" id="add"><i class="material-icons-outlined">
+                        library_add
+                    </i></button>
+
+
+
+
+                <button class="sideButton" id="expand-side"><i id="expand-side-icon" class="material-icons-outlined">
+                        open_in_full
+                    </i></button>
+
+
+
+                <button class="sideButton" id="toggle"><i id="change-toggle" class="material-icons-outlined">
+                        light_mode
+                    </i></button>
+
+                <button data-page-target="#settings-page" class="sideButton" id="settings"><i
+                        class="material-icons-outlined">
+                        settings
+                    </i></button>
+
+            </div>
+            <div id="user-page">
+                <div id="user-page-top">
+                    <img src="photos/profile.jpeg" alt="" id="profile-picture">
+                    <div id="bio">
+                        <h3 id="username">Ben Vilakazi</h3>
+                        <p class="bio-text" id="books-logged">Books Logged: 7</p>
+                        <p class="bio-text">Location: Johannesburg</p>
+                        <p class="bio-text">Favorite Book: The Martian</p>
+                        <p class="bio-text" id="joined-date">Joined: 14-04-2021</p>
+                    </div>
+                </div>
+                <div id="user-page-bottom">
+                    <h3 id="recent-header">Recently Added:</h3>
+                    <div id="recent-shelf">
+
+                    </div>
+                    <button id="logout">Logout</button>
+                </div>
+            </div>
+            <div id="book-page">
+                <img src="" alt="" id="book-profile-backdrop">
+                <img src="" alt="" id="book-profile-cover">
+                <h3 id="book-profile-title">Nocturnal Animals</h3>
+                <div id="book-profile-info">
+                    <i id="book-profile-status" class="material-icons-outlined bookmark-icon">
+                        turned_in
+                    </i>
+                    <div>
+                        <p class="book-profile-heading">Author:</p>
+                        <p class="book-profile-text" id="book-profile-author">Austin Wright</p>
+                    </div>
+                    <div>
+                        <p class="book-profile-heading">Pages:</p>
+                        <p class="book-profile-text" id="book-profile-pages">234</p>
+                    </div>
+                    <div>
+                        <p class="book-profile-heading">Date Read:</p>
+                        <p class="book-profile-text" id="book-profile-date">4-16-21</p>
+                    </div>
+                </div>
+                <button id="delete-book-btn">Delete</button>
+
+
+            </div>
+
+            <div class="add-active" id="shelf-page">
+                <div id="shelf-inside">
+
+                </div>
+            </div>
+
+
+            <div id="add-page">
+                <div class="page-heading">
+                    <i id="page-icon" class="material-icons-outlined">
+                        book
+                    </i>
+                    <p id="page-head-text">New Book</p>
+                </div>
+
+                <input class="input-box" id="title-input" type="text" placeholder="Title">
+                <input class="input-box" id="author-input" type="text" placeholder="Author">
+                <input class="input-box" id="pages-input" type="text" placeholder="Pages">
+                <input class="input-box" id="cover-input" type="text" value="" placeholder="URL For Cover">
+
+                <div class="check-div"><label class="option" for="unread"><input id="unread" type="radio"
+                            name="read-unread" checked value="unread">
+                        Unread</label>
+                    <label class="option" for="read"><input id="read" type="radio" name="read-unread" value="read">
+                        Read</label>
+                </div>
+                <button id="submit-book">Add To Library</button>
+            </div>
+            <div id="settings-page">
+                <div class="settings-heading">
+                    <i id="page-icon" class="material-icons-outlined">
+                        settings
+                    </i>
+                    <p id="settings-head-text">Settings</p>
+                </div>
+                <div id="settings-list">
+                    <button class="settings-button"><i id="expand-btn" class="material-icons-outlined settings-icon">
+                            toggle_off
+                        </i>
+                        <p class="settings-text">Expand Size</p>
+                    </button>
+                    <button class="settings-button"><i id="dark-btn" class="material-icons-outlined settings-icon">
+                            toggle_off
+                        </i>
+                        <p class="settings-text">Night Mode</p>
+                    </button>
+                    <button class="settings-button"><i id="bg-btn" class="material-icons-outlined settings-icon">
+                            toggle_off
+                        </i>
+                        <p class="settings-text">Gradient</p>
+                    </button>
+                </div>
+                <div id="about-text">
+                    <p>Designed By Ben Vilakazi</p>
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://twitter.com/">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
